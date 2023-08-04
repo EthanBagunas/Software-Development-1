@@ -6,13 +6,10 @@ function handleSubmit(event) {
 
     const form = document.querySelector('form');
     const formData = new FormData(form);
-    
-
 
     for (item of formData) {
         console.log(item[0], item[1]);
     }
-
 
     const url = 'http://localhost:7000/upload';
     postData(url, formData);
@@ -22,7 +19,7 @@ function handleSubmit(event) {
 // Add event listener to the submit button
 async function postData(url, data) {
     try {
-        const urlEncoded = new URLSearchParams(data).toString();
+      const urlEncoded = new URLSearchParams(data).toString();
       const response = await fetch(url, {
         method: "POST",
         body: urlEncoded, // just 'fd' for multipart/form-data

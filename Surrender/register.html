@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="register-style.css">
+    
+</head>
+<body>
+    <body>
+        <div class="navbar">
+            <div class="navbar__container">
+                <h1 id="navbar__logo">Pet Surrender Form</h1>
+            </div>
+        </div>
+        <div class="form">
+           
+            <form id="myForm"  enctype="multipart/form-data" >
+    
+                <!-- Owner Information Section -->
+                <div class="form-section">
+                    <h1>Owner Information</h1>
+                    <div class="form-text">
+                        <div class="form-field">
+                            <label for="date">Select date:</label><br>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-field">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Enter Name">
+                        </div>
+                        <div class="form-field">
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="address" name="address" placeholder="Enter Address">
+                        </div>
+                        <div class="form-field">
+                            <label for="age">Age:</label><br>
+                            <input type="number" id="age" name="age" placeholder="Enter Age">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-field">
+                            <label for="mno">Mobile Number:</label><br>
+                            <input type="number" id="mno" name="mno" placeholder="Enter Mobile Number">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Pet Information Section -->
+                <div class="form-section">
+                    <h1>Pet Information</h1>
+                    <div class="form-text">
+                        <div class="form-field">
+                            <label for="species">Species:</label><br>
+                            <input type="text" id="species" name="species" placeholder="Enter species">
+                        </div>
+                        <div class="form-field">
+                            <label for="petname">Pet Name:</label><br>
+                            <input type="text" id="petname" name="petname" placeholder="Enter The name of the Pet">
+                        </div>
+                        <div class="form-field">
+                            <label for="breed">Breed:</label><br>
+                            <input type="text" id="breed" name="breed" placeholder="Enter The breed of the Pet">
+                        </div>
+                        <div class="form-field">
+                            <label>Gender:</label><br>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                        </div>
+                        <div class="form-field">
+                            <label>Size:</label><br>
+                            <select name="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+    
+                <div class="form-field-submit">
+                    <input id="submit_btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+</body>
+<script src="register.js"></script>
+</html> 
